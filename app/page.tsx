@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export default function Home() {
    return (
-      <main className='flex h-[calc(100vh-90px)] flex-col items-center justify-between px-10 py-20 md:p-24'>
+      <main className='flex h-[calc(100vh-90px)] mt-[-25px] md:mt-0 flex-col items-center justify-between px-10 py-20 md:p-24'>
          <div>
             <h1 className='text-2xl md:text-4xl text-center'>
                Next 14 App Router Fetching PoC

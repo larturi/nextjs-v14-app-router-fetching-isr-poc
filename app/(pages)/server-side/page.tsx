@@ -18,7 +18,7 @@ export default async function ServerSide() {
    const countries = await getData();
 
    return (
-      <main className='flex h-[calc(100vh-90px)] flex-col items-center justify-between md:mt-[-45px] px-10 py-10 md:p-24'>
+      <main className='flex h-[calc(100vh-90px)] flex-col items-center justify-between mt-[-25px] md:mt-[-45px] px-10 py-10 md:p-24'>
          <div>
             <TitlePage
                title='Server Side Page'
