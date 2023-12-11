@@ -22,13 +22,7 @@ const ListCountries: React.FC<Props> = ({ countries, color }) => {
             >
                <div>
                   <h2 className={`text-sm md:text-xl font-bold ${color}`}>
-                     <a
-                        href='/country/argentina'
-                        target='_blank'
-                        rel='noopener noreferrer'
-                     >
-                        {country.name}
-                     </a>
+                     {country.name}
                   </h2>
                   <div className='dark:text-white text-gray-500'>
                      <p className='text-sm'>Population: {country.population}</p>
