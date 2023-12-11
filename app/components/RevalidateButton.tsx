@@ -23,14 +23,11 @@ const RevalidateButton: React.FC<Props> = ({ text = 'Revalidate' }) => {
       <>
          <button
             className='
-                    text-center mr-2 mt-2 border rounded py-1 px-2 md:py-2 md:px-3 text-sm
-                  text-gray-600 dark:text-white border-gray-500 dark:border-gray-400 
-                  dark:hover:border-gray-300 hover:bg-gray-100 
-                  hover:border-neutral-700 hover:dark:bg-neutral-800/30
+            relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-pink-500 to-orange-400 group-hover:from-pink-500 group-hover:to-orange-400 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800
                   '
             onClick={handleRevalidate}
          >
-            <div className='flex gap-2red'>
+            <div className='flex relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0'>
                <span>{text}</span>
                <span className={`${isLoading ? 'animate-spin' : ''} ml-1`}>
                   <TbRefresh size={20} />

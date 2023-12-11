@@ -28,17 +28,12 @@ const Button: React.FC<Props> = ({
    return (
       <>
          {domLoaded ? (
-            <Link href={url} target={`${blank ? '_blank' : '_self'}`}>
-               <p
-                  className='
-                     text-center mr-2 mt-2 border rounded py-1 px-2 md:py-2 md:px-3 text-sm
-                     text-gray-800 dark:text-white border-gray-500 dark:border-gray-400 
-                     dark:hover:border-gray-300 hover:bg-gray-100 
-                     hover:border-neutral-700 hover:dark:bg-neutral-800/30
-                  '
-               >
-                  {isMobile ? icon : text}
-               </p>
+            <Link
+               href={url}
+               target={`${blank ? '_blank' : '_self'}`}
+               className='text-gray-900 bg-white border border-gray-300 hover:bg-gray-100 font-medium rounded-lg text-sm px-3 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600'
+            >
+               {isMobile ? icon : text}
             </Link>
          ) : (
             <ButtonSkeleton text={text} icon={icon} />
