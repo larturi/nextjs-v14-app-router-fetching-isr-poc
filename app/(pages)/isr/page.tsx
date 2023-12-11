@@ -24,9 +24,9 @@ export default async function ISR() {
             <TitlePage
                title='ISR Time-based Revalidation'
                subtitle='This page does the fetch at the time of build and the content
-               will be updated every 15 seconds. It is necessary to specify in the fetch how many seconds the revalidate will be performed.'
+               will be updated every 30 seconds. It is necessary to specify in the fetch how many seconds the revalidate will be performed.'
                codeExample='const res = await fetch(url, { next: { revalidate: 30 } } )'
-               urlExampleGitHub='https://github.com/larturi/nextjs-v14-app-router-fetching-isr-poc/blob/1443140b8af367ced49f920216f139be4e7eaafe/app/(pages)/isr/page.tsx#L5-L16'
+               urlExampleGitHub='https://github.com/larturi/nextjs-v14-app-router-fetching-isr-poc/blob/main/app/(pages)/isr/page.tsx#L5-L16'
                underlineColor='border-red-500 border-b-4'
                underlineWidth='w-[130px] md:w-[280px]'
             />
